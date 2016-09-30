@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		464CC56A1D9DE1C2006B3E72 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 464CC5691D9DE1C2006B3E72 /* RxSwift.framework */; };
+		464CC56C1D9DE1EE006B3E72 /* Expirable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464CC56B1D9DE1EE006B3E72 /* Expirable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		464CC55B1D9DE0B0006B3E72 /* Expirable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Expirable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		464CC55F1D9DE0B0006B3E72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		464CC5691D9DE1C2006B3E72 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		464CC56B1D9DE1EE006B3E72 /* Expirable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expirable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 		464CC55D1D9DE0B0006B3E72 /* Expirable */ = {
 			isa = PBXGroup;
 			children = (
+				464CC56B1D9DE1EE006B3E72 /* Expirable.swift */,
 				464CC55F1D9DE0B0006B3E72 /* Info.plist */,
 			);
 			path = Expirable;
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				464CC56C1D9DE1EE006B3E72 /* Expirable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
