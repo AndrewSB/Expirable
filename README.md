@@ -29,9 +29,9 @@ class APIProvider {
     // ...
   }
 }
+```
 
 The `expiresSoon` Observable is the real meat of this micro library. It hoists the syncronous "have I expired yet" checks one could make when making a server request into the Rx world, to optimistically refresh early 😊
-```
 
 ### API
 
