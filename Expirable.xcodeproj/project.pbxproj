@@ -33,7 +33,7 @@
 		464CC5511D9DE0B0006B3E72 = {
 			isa = PBXGroup;
 			children = (
-				464CC55D1D9DE0B0006B3E72 /* Expirable */,
+				464CC55D1D9DE0B0006B3E72 /* Source */,
 				464CC55C1D9DE0B0006B3E72 /* Products */,
 				464CC5681D9DE1C2006B3E72 /* Frameworks */,
 			);
@@ -47,13 +47,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		464CC55D1D9DE0B0006B3E72 /* Expirable */ = {
+		464CC55D1D9DE0B0006B3E72 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				464CC56B1D9DE1EE006B3E72 /* Expirable.swift */,
 				464CC55F1D9DE0B0006B3E72 /* Info.plist */,
 			);
-			path = Expirable;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		464CC5681D9DE1C2006B3E72 /* Frameworks */ = {
@@ -262,14 +262,14 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Expirable/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tfw.Expirable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -286,13 +286,13 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Expirable/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tfw.Expirable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

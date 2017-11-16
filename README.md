@@ -8,6 +8,13 @@ I wrote this while dealing with a number of expiring values (nonces from a hardw
 
 It's a one-file dependency that exposes an `Expirable` protocol. Once implemented by a object that models some data that becomes stale at some point in the future, you get a number of convienient ways to deal with and react to said data expiring
 
+### Installation
+
+The package is available through
+- Swift package manager
+- Carthage
+- Manual copying of the one file
+
 ### Sample usage
 
 ```swift 
