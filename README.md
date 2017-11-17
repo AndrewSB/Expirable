@@ -17,28 +17,7 @@ The package is available through
 
 ### Sample usage
 
-```swift 
-struct OAuthToken: Exiprable {
-  let token: String
-  let refreshToken: String
-  
-  let expiresAt: Date
-  var expirationMarginInterval: TimeInterval { return 30 }
-}
-```
-I'd fill in the `token`, `refreshToken`, and `expiresAt` from my server response. The `expirationMarginInterval` is an interval before the expiry date at which one can (pre-)fetch a new auth token, to try to make it so the system always has a valid auth token. I'd use it like so:
-
-```swift
-class APIProvider {
-  init() {
-    // ...
-    self.authToken.expiresSoon.flatMap(requestNewAuthTokenAndSaveIt).disposed(by: self.disposeBag)
-    // ...
-  }
-}
-```
-
-The `expiresSoon` Observable is the real meat of this micro library. It hoists the syncronous "have I expired yet" checks one could make when making a server request into the Rx world, to optimistically refresh early 😊
+You can check out the [Example.playground](Example.playground) to see an example of the library in use. Make sure you `carthage bootstrap` and build the Expirable framework, the playground can't run without them.
 
 ### API
 
