@@ -1,18 +1,16 @@
-// swift-tools-version:4.0
+// swift-tools-version:5.3
 import PackageDescription
 
 let package = Package(
-    name: "Expirable",
-    products: [.library(name: "Expirable", targets: ["Expirable"])],
-    dependencies: [
-        .package(url: "https://github.com/ReactiveX/RxSwift.git", .upToNextMajor(from: "4.0.0"))
-    ],
-    targets: [
-        .target(
-            name: "Expirable",
-            dependencies: ["RxSwift"],
-            exclude: ["README.md", "Example.playground", "Carthage", "Cartfile", "Cartfile.resolved"]
-        )
-    ],
-    swiftLanguageVersions: [3, 4]
+  name: "Expirable",
+  platforms: [.iOS(.v13)],
+  products: [.library(name: "Expirable", targets: ["Expirable"])],
+  dependencies: [],
+  targets: [
+    .target(
+      name: "Expirable",
+      path: "Source",
+      exclude: ["README.md", "Example.playground", "Cartfile.resolved"]
+    )
+  ]
 )

@@ -1,7 +1,6 @@
 import Foundation
 import PlaygroundSupport
 import Expirable
-import RxSwift
 
 PlaygroundPage.current.needsIndefiniteExecution = true
 
